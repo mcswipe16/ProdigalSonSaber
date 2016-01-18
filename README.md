@@ -639,3 +639,30 @@ public class ProdigalSonRenderer implements IItemRenderer {
 		}
 	}
 }
+
+
+//ClientProxy(Named Client)
+
+
+package StarWars.main;
+
+import StarWars.LightSabers.Renders.ProdigalSonRenderer;
+import net.minecraftforge.client.MinecraftForgeClient;
+
+
+
+
+
+public class Client
+  extends Common
+{
+
+	
+  public void registerRenders() {
+	  MinecraftForgeClient.registerItemRenderer(StarWars.ProdigalSonSaber, new ProdigalSonRenderer()); 
+	
+  }
+	 
+							 
+			
+}
